@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/-mahjong/static/css/main.b131c4f5.css",
+    "main.js": "/-mahjong/static/js/main.b0f5b631.js",
+    "index.html": "/-mahjong/index.html",
+    "main.b131c4f5.css.map": "/-mahjong/static/css/main.b131c4f5.css.map",
+    "main.b0f5b631.js.map": "/-mahjong/static/js/main.b0f5b631.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b131c4f5.css",
+    "static/js/main.b0f5b631.js"
+  ]
+}
