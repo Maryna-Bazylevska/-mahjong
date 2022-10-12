@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+  max-width: 745px;
+  height: 100%;
+
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+  color: black;
+}
+
+.container {
+  margin-top: 108px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.card {
+  width: 80px;
+  height: 104px;
+  margin: 15px;
+  border: 0.5px solid #cdcdcd;
+  border-radius: 8px;
+  animation: 4s hideCard linear;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.card-front {
+  width: 80px;
+  height: 104px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  animation: 4s hideImage linear;
+}
+.card-front.active {
+  opacity: 1;
+}
+
+@keyframes hideCard {
+  0%,
+  70% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(180deg);
+  }
+}
+
+@keyframes hideImage {
+  0%,
+  84% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 0;
+  }
+}
